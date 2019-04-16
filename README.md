@@ -1,3 +1,4 @@
+							##MASTER CODE<BR>
 FOP_1.
 Sudeer wants to check his level of coding in basic
 to find out  sum of digits of the given two digit number.
