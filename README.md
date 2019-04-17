@@ -1,8 +1,11 @@
-FOP_1.
-Sudeer wants to check his level of coding in basic
-to find out  sum of digits of the given two digit number.
-In order to find out this we have given method templet for you
-in that you need  to write the code by following specifications:
+Program : FOP_1.
+Language: Java
+Level   : Basic
+Module  : Fundamental of Programming
+Topic   : Control Statements
+
+Problem Statement : Sudeer wants to check his level of coding in basic to find out  sum of digits of the given two digit number. 
+In order to find out this we have given method templet for you in that you need  to write the code by following specifications:
 
 
 Specifications: The value returned by the method getSumOfdigits() is determined by the following rules:
@@ -15,7 +18,6 @@ if the given value is in between 0 and 9, return -1
 Input Format  : N is a positive integer value.
 
 Output Format : Method should return sum of its digit of given number.
-
 
 Constraints:
 10<=N<=99
@@ -72,9 +74,6 @@ Input10:
 Output10:
 -2
 
-
-
-
 Templet:
 ========
  import java.util.Scanner;
@@ -121,7 +120,13 @@ public class Test {
 	}
 }
 ===============================================================================================================
-FOP_2 : Can you write  a  method which is used to find out the  
+Program : FOP_2 
+Language: Java
+Level   : Basic
+Module  : Fundamental of Programming
+Topic   : Control Statements
+
+Can you write  a  method which is used to find out the  
 difference of digits of the given two digit numbers by using following specifications.
 
 
@@ -237,7 +242,16 @@ public class Test {
 	}
 }
 =====================================================================================
-FOP_3: For a given method write the logic which returns the 1 
+
+Program: FOP_3
+Language: Java
+Level   	   : Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:  
+
+
+For a given method write the logic which returns the 1 
 if the given three digit number is palindrome, in other case return 0.
 
 Specifications: The value returned by the method isPalindrome() is determined by the following rules:
@@ -345,7 +359,13 @@ public class Test {
 
 }
 ===================================================================================================
-FOP_4 : For a given  method write a logic which returns  1 if the given number is even, in other case return 0.
+Program: FOP_4
+Language: Java
+Level   	   : Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:  
+For a given  method write a logic which returns  1 if the given number is even, in other case return 0.
 
 Specifications : The value returned by the method isEven() is determined by the following rules:
 
@@ -448,7 +468,14 @@ class Test {
     }
 }
 ===========================================================================
-FOP_5 : For a given method write a logic  which returns the greatest number 
+Program: FOP_5
+Language: Java
+Level   	   : Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:  
+
+For a given method write a logic  which returns the greatest number 
 among two numbers by using following specifications.
 
 Specifications: The value returned by the method getGreatest() is determined by the following rules:
@@ -566,7 +593,14 @@ public class Test {
     }
 }
 ====================================================================================
-FOP_6: For a given method write a logic which returns the least number among two numbers by using following specifications.
+Program: FOP_6
+Language: Java
+Level   	   : Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:  
+
+For a given method write a logic which returns the least number among two numbers by using following specifications.
  
 Specifications: The value returned by the method getLeastNum() is determined by the following rules:
 
@@ -681,7 +715,14 @@ public class Test {
     }
 }
 ===========================================================================================
-FOP_7:Write a method which accepts two value as arguments(an integer and boolean) and return the string indicating when the alarm should ring. 
+Program: FOP_7
+Language: Java
+Level   	   : Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement: 
+
+Write a method which accepts two value as arguments(an integer and boolean) and return the string indicating when the alarm should ring. 
 
 the first argument indicating day of the week encoded as 
 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation or not.
@@ -814,7 +855,14 @@ public class Test {
     }
 }
 ====================================================================================================================
-FOP_8:Teacher asked abdul rehman to write a program which Roman number to decimal.
+Program: FOP_8
+Language: Java
+Level   	   : Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
+Teacher asked abdul rehman to write a program which Roman number to decimal.
 Below teacher has given  example to find its corresponding decimal value.
 
 Example :
@@ -1011,7 +1059,13 @@ public class Test {
 
 }
 =====================================================================================================
-FOP_9:
+Program: FOP_9
+Language: Java
+Level   	   : Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
 Find total number of Squares in a N*N cheesboard.
 
 Input:
@@ -1180,7 +1234,13 @@ class Test {
 	}
 }
 =========================================================================================================
-FOP_10:
+Program: FOP_10
+Language: Java
+Level   	   : Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
 Given two positive integers N and X, where N is the number of total patients and X is the time duration(in minutes) after which a new patient arrives. 
 Also, doctor will give only 10 minutes to each patient. 
 The task is to calculate the time (in minutes) the last patient needs to wait.
@@ -1357,7 +1417,13 @@ class Test {
 
 }
 =====================================================================================================
-FOP_11 :
+Program: FOP_11
+Language: Java
+Level   	   : Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
 Given a positive integer n, check if it is perfect square or not.
 Note: Try to solve the question using only addition and subtraction operation.
 
@@ -1539,9 +1605,15 @@ class Test {
 	}
 }
 ==================================================================================================
-FOP_12: 
-Difficulty: Basic    
-Problem:
+Program: FOP_12
+Language: Java
+Level   	   : Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
+ 
+ 
 Given an integer N, denoting the number of cuts that can be made on a pancake, find the maximum number of pieces that can be formed by making N cuts.
 
 Input:
@@ -1728,7 +1800,13 @@ class Test {
 	}
 }
 ===============================================================================================================
-FOP_13:
+Program: FOP_13
+Language: Java
+Level   	   : Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
 You are given an integer input N and you have to find whether it is Anshuman’s favourite or not.
 
 If it is then print "YES" else print "NO".
@@ -1899,7 +1977,13 @@ class Test {
 	}
 }
 ============================================================================================
-FOP_14:
+Program: FOP_14
+Language: Java
+Level   	   : Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
 
 Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
 
@@ -2076,7 +2160,13 @@ class Test {
 	}
 }
 ==========================================================================================================================
-FOP_15 :
+Program: FOP_15
+Language: Java
+Level   	   : Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
  Sherlock Being tired with the usual coding rounds started growing his interest towards reverse coding when he won the event in his college symposium. 
  He wondered if his friend has the brain to quickly identify the pattern and verify if his inputs are correct or not. 
  From the example portion given below, where you will be given a number(n) and its output, Using this find the pattern. 
@@ -2249,7 +2339,13 @@ class Test {
 	}
 }
 ==================================================================================================================================
-FOP_16 : 
+Program		: FOP_16
+Language	: Java
+Level   	: Hard
+Module   	: Fundamental of Programming
+Topic       : Control Statements
+Problem Statement:   
+
 A number n is said to be Deficient Number if sum of all the divisors of the number denoted by divisorsSum(n) is less than twice the value of the number n. 
 And the difference between these two values is called the deficiency.
 
@@ -2455,7 +2551,14 @@ class Test {
 
 }
 =====================================================================================================================================================
-FOP_17:
+Program   : FOP_17
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+   
+
 You will be given a positive integer K. Your task is to find the number of ordered pairs of positive integers (a,b) where 1 ≤ a < b < K such that a + b ≤ K.
 Input: 
 The first line of input contains a single integer T denoting the number of test cases.
@@ -2604,7 +2707,15 @@ class Test {
 	}
 }
 ==============================================================================================================================================================
-FOP_18: John wants to put all natural numbers between a range of  two numbers 
+Program   : FOP_18
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements & String
+Problem Statement:   
+
+
+John wants to put all natural numbers between a range of  two numbers 
 in a string by maintaining a single space.
 Note : Should not use loops.
 
@@ -2718,7 +2829,14 @@ public class Test {
 	}
 }
 =========================================================================================
-FOP_19:
+Program   : FOP_19
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements & String
+Problem Statement:   
+
+
 John and smith are good programmers, 
 every time smith give challange to John to solve problems, but know
 John given challenge to smith to resolve whether a given number is kaprekar number or not.
@@ -2853,7 +2971,14 @@ class S {
 	}
 }
 ==============================================================================================================================
-FOP_20:
+Program   : FOP_20
+Language : Java
+Level   	   :  Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements & String
+Problem Statement:   
+ 
+
 Mr. Horner wants to write a method which can check whether a given input is a prime number or not by following
 
 method specification:
@@ -2968,7 +3093,14 @@ public class Test {
 	}
 }
 =============================================================================================================
-FOP_21:
+Program   : FOP_21
+Language : Java
+Level   	   :  Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements
+Problem Statement:   
+
+
 For a given method which accepts a value as number and returns the sum of factors of given number.
 
 Specifications: The value returned by the method getSumOfFactors() is determined by the following rules:
@@ -3076,7 +3208,13 @@ public class Test {
 
 }
 ==================================================================================================================================================
-FOP_22:
+Program   : FOP_22
+Language : Java
+Level   	   :  Easy
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
 
 For a given method which accepts a value as number and returns the count of factors of given number.
 Example:
@@ -3191,7 +3329,14 @@ public class Test {
 
 }
 ===============================================================================================================================
-FOP_23:
+Program   : FOP_23
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+
 For a given method which accepts 3 values as number and checks and returns the name of the type of triangle generated.
  
 Specification :  The value returned by the method findTriangle() is determined by the following rules:
@@ -3314,7 +3459,14 @@ public class Test {
 
 }
 ============================================================================================================================
-FOP_24 :
+Program   : FOP_24
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+
 Victor want to write a program to check the given number is and adam number are not.
 
 Explanation:
@@ -3459,7 +3611,14 @@ class Test {
     }
 }
 =======================================================================================================================
-FOP_25:In a given method write a logic to return true if sum of alternate digits is same otherwise return false.
+Program   : FOP_25
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+In a given method write a logic to return true if sum of alternate digits is same otherwise return false.
 
 Example:1
 
@@ -3593,7 +3752,14 @@ public class Test {
 
 }
 ========================================================================================================
-FOP_26:
+Program   : FOP_26
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+
 For a given method find out the  Russian multiplication.
 
 Russian Multiplication Explained:
@@ -3733,7 +3899,15 @@ public class Test {
 	}
 }
 ====================================================================================
-FOP_27:
+Program   : FOP_27
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements  & String
+Problem Statement:   
+
+
+
 For a given method write the logic which returns  Collatz Sequence for a give input value.
  
 
@@ -3854,7 +4028,14 @@ class Test {
 	}
 }
 =====================================================================================================
-FOP_28:
+Program   : FOP_28
+Language: Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements & String
+Problem Statement:   
+
+
 For a given method write the logic which returns "FIZZ" if the input is a multiple of 3, prints "BIZZ" if the input is a multiple of 5 and prints "FIZZBIZZ" if the input is a multiple of 3 and 5. 
 Print the given input if it is multiple of neither 3 nor 5. 
 
@@ -3960,7 +4141,14 @@ public class Test {
 	}
 }
 ==========================================================================================================================================
-FOP_29 :
+Program   : FOP_29
+Language: Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+
 Write the program which accepts an integer value, and check the given number is an perfect, abundant or deficient number.
 
 Explanation:
@@ -4103,7 +4291,14 @@ public class Test {
 	}
 }
 ==========================================================================================================================
-FOP_30: For a given method write a logic to count no of digits of given long number.
+Program   : FOP_30
+Language: Java
+Level   	   :  Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Problem Statement:   
+
+For a given method write a logic to count no of digits of given long number.
 
 Specification: Specifications: The value returned by the method countDigits() is determined by the following rules:
 If a number is negative or zero , return -1.
@@ -4207,7 +4402,15 @@ public class Test {
 ==================================================================================================================================================================
 					    Pattern Programs
 ==================================================================================================================================================================
-FOP_31:For a given method print star pattern or rectangle star pattern.
+Program   : FOP_31
+Language: Java
+Level   	   :  Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+For a given method print star pattern or rectangle star pattern.
 
 Constraints:
 2<=N<=10 
@@ -4353,7 +4556,15 @@ public class Test {
 
 }
 ====================================================================================================
-FOP_32:For a given method print star pattern  with given no of rows and columns.
+Program   : FOP_32
+Language: Java
+Level   	   :  Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+  
+For a given method print star pattern  with given no of rows and columns.
 Input Format: First line contain ROWS , COLUMNS as integer.
 Output Format: Print star pattern , based on rows and columns.
 
@@ -4496,7 +4707,15 @@ public class Test {
 
 }
 ================================================================================================================================
-FOP_33:
+Program   : FOP_33
+Language: Java
+Level   	   :  Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
 For a given method write a logic to print mirrored rhombus star pattern.
 Input Format: First line contain integer.
 Output Format: Print mirrored rhombus star pattern.
@@ -4641,7 +4860,17 @@ public class Test {
 
 }
 ====================================================================================================================
-FOP_34 : For a given method write  a logic to print mirrored parallelogram star pattern.
+Program   : FOP_34
+Language: Java
+Level   	   :  Basic
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
+
+ For a given method write  a logic to print mirrored parallelogram star pattern.
 Input Format: First line contain ROWS , COLUMNS as integer.
 Output Format: Print mirrored parallelogram star pattern , based on rows and columns.
 
@@ -4767,7 +4996,16 @@ public class Test {
 
 }
 =====================================================================================================================================
-FOP_35:For a given method write a logic to print hollow square.
+Program   : FOP_35
+Language: Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+ 
+
+For a given method write a logic to print hollow square.
 
 Input Format  : Take N as input of type integer.
 Output Format : Print hollow square.
@@ -4915,7 +5153,15 @@ public class Test {
 
 }
 ============================================================================================================================================
-FOP_36 : For a given method write a logic to print  hollow rectangle pattern in a MxN matrix.
+Program   : FOP_36
+Language: Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+ 
+For a given method write a logic to print  hollow rectangle pattern in a MxN matrix.
 
 Input Format  : Read two integers i.e. M(Rows) and N(Columns).
 
@@ -5060,7 +5306,15 @@ public class Test {
 
 }
 =======================================================================================================================================
-FOP_37:For a given method write a logic to print hollow square star pattern with diagonal.
+Program   : FOP_37
+Language: Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+For a given method write a logic to print hollow square star pattern with diagonal.
 
 Input Format  : Take N as input of type integer.
 
@@ -5226,7 +5480,18 @@ public class Test {
 
 }
 ==============================================================================================================================================
-FOP_38 : For a given method  write a logic to print hollow rhombus, parallelogram star pattern.
+
+Program   : FOP_38
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
+
+For a given method  write a logic to print hollow rhombus, parallelogram star pattern.
 
 Input Format  : Take N as input of type integer.
 Output Format : Print hollow rhombus, parallelogram star pattern.
@@ -5368,7 +5633,16 @@ public class Test {
 
 }
 =========================================================================================================================================
-FOP_39: For a given method write the logic to print right triangle star pattern.
+
+Program   : FOP_39
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+For a given method write the logic to print right triangle star pattern.
 
 Input Format  : Take N as input of type integer.
 Output Format : Print the right triangle star pattern.
@@ -5495,7 +5769,16 @@ public class Test {
 	 
 }
 ================================================================================================================================
-FOP_40: For a given method write the logic to print hollow right triangle star pattern.
+Program   : FOP_40
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
+For a given method write the logic to print hollow right triangle star pattern.
 
 Input Format  : Take N as input of type integer.
 Output Format : Print hollow right triangle star pattern.
@@ -5633,7 +5916,14 @@ public class Test {
 	 
 }
 =================================================================================================================
-FOP_41 : 
+Program   : FOP_41
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
 For a given method write the logic to print hollow mirrored right triangle star pattern.
 
 Input Format  : Take N as input of type integer.
@@ -5777,7 +6067,16 @@ public class Test {
 	 
 }
 =================================================================================================================================================
-FOP_42:For a given method write the logic to print mirrored right triangle star pattern.
+Program   : FOP_42
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
+For a given method write the logic to print mirrored right triangle star pattern.
 
 Input Format  : Take N as input of type integer.
 Output Format : Print the mirrored right triangle star pattern.
@@ -5914,7 +6213,16 @@ public class Test {
 	 
 }
 =============================================================================================================================================
-FOP_43: For a given method write the logic to print reverse right triangle star pattern.
+Program   : FOP_43
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+ 
+
+For a given method write the logic to print reverse right triangle star pattern.
 
 Input  Format  : Take N as input of type integer.
 Output Format  : Print the  reverse right triangle star pattern.
@@ -6056,7 +6364,15 @@ public class Test {
 	 
 }
 =============================================================================================================================================
-FOP_44:
+Program   : FOP_44
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+ 
+
 For a given method write the logic to print reversed mirrored right triangle star pattern.
 
 Input Format  : Take N as input of type integer.
@@ -6195,7 +6511,16 @@ public class Test {
 	 
 }
 =========================================================================================================================================================================
-FOP_45:
+Program   : FOP_45
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
+
+
 For a given method write the logic to print hollow inverted right triangle star pattern.
 
 Input  Format  : Take N as input of type integer.
@@ -6362,7 +6687,15 @@ public class Test {
 
 }
 ==============================================================================================================================================================
-FOP_46:
+
+Program   : FOP_46
+Language : Java
+Level   	   :  Medium
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
 For a given method write the logic to print hollow mirrored inverted right triangle star pattern.
 
 Input  Format  : Take N as input of type integer.
@@ -6522,7 +6855,14 @@ public class Test {
 
 }
 ===============================================================================================================================================
-FOP_47 : 
+Program   : FOP_47
+Language : Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement:   
+
 For a given method write the logic to print Equilateral triangle (Pyramid) star pattern.
 
 Input  Format  : Take N as input of type integer.
@@ -6676,7 +7016,13 @@ public class Test {
 
 }
 ====================================================================================================================================
-FOP_48:
+Program   : FOP_48
+Language : Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
+Problem Statement: 
 For a given method write the logic to print reverse Pyramid star pattern.
 
 Input  Format  : Take N as input of type integer.
@@ -6821,7 +7167,12 @@ public class Test {
 
 }
 =====================================================================================================================================
-FOP_49:
+Program   : FOP_49
+Language : Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
 For a given method write the logic to print hollow pyramid (Equilateral triangle) star pattern.
 
 
@@ -6972,7 +7323,12 @@ public class Test {
 
 }
 ===========================================================================================================================
-FOP_50:
+Program   : FOP_50
+Language : Java
+Level   	   :  Hard
+Module   : Fundamental of Programming
+Topic        : Control Statements 
+Subtopic: Star Pattern
 For a given method write the logic to print hollow inverted pyramid star pattern.
 
 
@@ -7111,104 +7467,3 @@ public class Test {
 
 }
 ======================================================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
