@@ -1,4 +1,3 @@
-							##MASTER CODE<BR>
 FOP_1.
 Sudeer wants to check his level of coding in basic
 to find out  sum of digits of the given two digit number.
@@ -4214,7 +4213,7 @@ Constraints:
 2<=N<=10 
 Specification : The method starPattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print the star pattern.
 
 Sample Input1:
@@ -4364,7 +4363,7 @@ Constraints:
  
 Specification : The method starPattern() is determined by the following rules: 
 -If Rows , Columns is negative or zero then print -1.
--If Rows, Columns is more then 10 then, print -2.
+-If Rows, Columns is not in a range of above constraints then, print -2.
 -Otherwise print the star pattern.
 
 Sample Input1:
@@ -4507,7 +4506,7 @@ Constraints:
  
 Specification : The method rhombusStarPattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print mirrored rhombus star pattern.
 
 Sample Input1:
@@ -4652,7 +4651,7 @@ Constraints:
  
 Specification : The method parallelogramStarPattern() is determined by the following rules: 
 -If Rows , Columns is negative or zero then print -1.
--If Rows, Columns is more then 10 then, print -2.
+-If Rows, Columns  is not in a range of above constraints then, print -2.
 -Otherwise print the parallelogram star pattern.
 
 Sample Input1:
@@ -4779,7 +4778,7 @@ Constraints:
 
 Specifation: The method hollowSquarePattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print hollow square pattern.
 
 
@@ -4928,7 +4927,7 @@ Constraints:
 
 Specification : The method hollowRectangleStarPattern() is determined by the following rules: 
 -If M ,N is negative or zero then print -1.
--If M, N is more then 10 then, print -2.
+-If M, N is not in a range of above constraints then, print -2.
 -Otherwise print the hollow rectangle star pattern.
 
 Sample Input1:
@@ -5072,7 +5071,7 @@ Constraints:
 
 Specification: The method hollowSquareWithDiagonal() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print hollow square star pattern with diagonal.
 
 
@@ -5238,7 +5237,7 @@ Constraints:
 
 Specifation: The method hollowRhombusParallelogramPattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print hollow rhombus, parallelogram star pattern.
 
 Sample Input1:
@@ -5379,7 +5378,7 @@ Constraints:
 
 Specification: The method rightTriangleStarPattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print right triangle star pattern.
 
 Sample Input1:
@@ -5506,7 +5505,7 @@ Constraints:
 
 Specification: The method hollowRightTriangleStarPattern() is determined by the following rules: 
 -If N is negative or zero then print -1.
--If N is more then 10 then, print -2.
+-If N is not in a range of above constraints then, print -2.
 -Otherwise print hollow right triangle star pattern.
 
 Sample Input1:
@@ -5634,6 +5633,1527 @@ public class Test {
 	 
 }
 =================================================================================================================
+FOP_41 : 
+For a given method write the logic to print hollow mirrored right triangle star pattern.
+
+Input Format  : Take N as input of type integer.
+Output Format : Print hollow mirrored right triangle star pattern.
+
+Constraints:
+2<=N<=10
+
+Specification: The method hollowmirroredRightTrianglePattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print hollow mirrored right triangle star pattern.
+
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   **
+  * *
+ *  *
+*****
+Sample Input2:
+-7
+Sample Output2:
+-1
+Sample Input3:
+13
+Sample Output3:
+-2
+Input4:
+3
+Output4:
+  *
+ **
+***
+Input5:
+6
+Output5:
+     *
+    **
+   * *
+  *  *
+ *   *
+******
+Input6:
+7
+Output6:
+      *
+     **
+    * *
+   *  *
+  *   *
+ *    *
+*******
+Input7:
+9
+Output7:
+        *
+       **
+      * *
+     *  *
+    *   *
+   *    *
+  *     *
+ *      *
+*********
+Input8:
+2
+Output8:
+ *
+**
+Input9:
+10
+Output9:
+         *
+        **
+       * *
+      *  *
+     *   *
+    *    *
+   *     *
+  *      *
+ *       *
+**********
+Input10:
+4
+Output10:
+   *
+  **
+ * *
+****
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowRightTriangleStarPattern(num); 
+	}
+    public static void hollowRightTriangleStarPattern(int num){
+    		//write the code here...		 
+    }
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowRightTriangleStarPattern(num); 
+	}
+    public static void hollowRightTriangleStarPattern(int num){
+    		if(num<=0){
+    			System.out.println(-1);
+    		}else if(num>=2 && num<=10){
+    			for(int i=1;i<=num;i++){
+    				 for(int j=i;j<num;j++){
+    					 System.out.print(" ");
+    				 }
+    				for(int j=1;j<=i;j++){
+    					if(j==1 ||j==i||i==num)
+    					System.out.print("*");
+    					else
+    					System.out.print(" ");
+    				}
+    				System.out.println();
+    			}
+    		}else {
+    			System.out.println(-2);
+    		}
+    }
+	 
+}
+=================================================================================================================================================
+FOP_42:For a given method write the logic to print mirrored right triangle star pattern.
+
+Input Format  : Take N as input of type integer.
+Output Format : Print the mirrored right triangle star pattern.
+
+Constraints:
+2<=N<=10
+
+Specification: The method mirroredRightTriangleStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print  mirrored right triangle star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   **
+  ***
+ ****
+*****
+Sample Input2:
+1
+Sample Output2:
+-2
+Sample Input3:
+-10
+Sample Output3:
+-1
+Input4:
+2
+Output4:
+ *
+**
+Input5:
+3
+Output5:
+  *
+ **
+***
+Input6:
+4
+Output6:
+   *
+  **
+ ***
+****
+Input7:
+6
+Output7:
+     *
+    **
+   ***
+  ****
+ *****
+******
+Input8:
+7
+Output8:
+      *
+     **
+    ***
+   ****
+  *****
+ ******
+*******
+Input9:
+8
+Output9:
+       *
+      **
+     ***
+    ****
+   *****
+  ******
+ *******
+********
+Input10:
+9
+Output10:
+        *
+       **
+      ***
+     ****
+    *****
+   ******
+  *******
+ ********
+*********
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		mirroredRightTriangleStarPattern(num); 
+	}
+    public static void mirroredRightTriangleStarPattern(int num){
+    		 //write the code here....
+    }
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		mirroredRightTriangleStarPattern(num); 
+	}
+    public static void mirroredRightTriangleStarPattern(int num){
+    		if(num<=0){
+    			System.out.println(-1);
+    		}else if(num>=2 && num<=10){
+    			for(int i=1;i<=num;i++){
+    				for(int space=i;space<num;space++){
+    					System.out.print(" ");
+    				}
+    				for(int j=1;j<=i;j++){
+    					System.out.print("*");
+    				}
+    				System.out.println();
+    			}
+    		}else {
+    			System.out.println(-2);
+    		}
+    }
+	 
+}
+=============================================================================================================================================
+FOP_43: For a given method write the logic to print reverse right triangle star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print the  reverse right triangle star pattern.
+
+Constraints:
+2<=N<=10
+
+Specification: The method reverseRightTriangleStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print reverse right triangle star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*****
+****
+***
+**
+*
+Sample Input2:
+1
+Sample Output2:
+-2
+Sample Input3:
+0
+Sample Output3:
+-1
+Input4:
+3
+Output4:
+***
+**
+*
+Input5:
+4
+Output5:
+****
+***
+**
+*
+Input6:
+6
+Output6:
+******
+*****
+****
+***
+**
+*
+Input7:
+7
+Output7:
+*******
+******
+*****
+****
+***
+**
+*
+Input8:
+8
+Output8:
+********
+*******
+******
+*****
+****
+***
+**
+*
+Input9:
+9
+Output9:
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+Input10:
+10
+Output10:
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reverseRightTriangleStarPattern(num); 
+	}
+    public static void reverseRightTriangleStarPattern(int num){
+    		 //write the code here..
+    }
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reverseRightTriangleStarPattern(num); 
+	}
+    public static void reverseRightTriangleStarPattern(int num){
+    		if(num<=0){
+    			System.out.println(-1);
+    		}else if(num>=2 && num<=10){
+    			 for(int i=1;i<=num;i++){
+    				 for(int j=i;j<=num;j++){
+    					 System.out.print("*");
+    				 }
+    				 System.out.println();
+    			 }
+    		}else {
+    			System.out.println(-2);
+    		}
+    }
+	 
+}
+=============================================================================================================================================
+FOP_44:
+For a given method write the logic to print reversed mirrored right triangle star pattern.
+
+Input Format  : Take N as input of type integer.
+Output Format : Print the  reversed mirrored right triangle star pattern.
+
+Constraints:
+2<=N<=10
+
+Specification: The method reversedMirroredRightTriangleStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print reversed mirrored right triangle star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*****
+ ****
+  ***
+   **
+    *
+Sample Input2:
+11
+Sample Output2:
+-2
+Sample Input3:
+0
+Sample Output3:
+-1
+Input4:
+2
+Output4:
+**
+ *
+Input5:
+3
+Output5:
+***
+ **
+  *
+Input6:
+4
+Output6:
+****
+ ***
+  **
+   *
+Input7:
+6
+Output7:
+******
+ *****
+  ****
+   ***
+    **
+     *
+Input8:
+7
+Output8:
+*******
+ ******
+  *****
+   ****
+    ***
+     **
+      *
+Input9:
+8
+Output9:
+********
+ *******
+  ******
+   *****
+    ****
+     ***
+      **
+       *
+Input10:
+9
+Output10:
+*********
+ ********
+  *******
+   ******
+    *****
+     ****
+      ***
+       **
+        *
+
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reversedMirroredRightTriangleStarPattern(num); 
+	}
+    public static void reversedMirroredRightTriangleStarPattern(int num){
+    		 //write the code here...
+    }
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reversedMirroredRightTriangleStarPattern(num); 
+	}
+    public static void reversedMirroredRightTriangleStarPattern(int num){
+    		if(num<=0){
+    			System.out.println(-1);
+    		}else if(num>=2 && num<=10){
+    			 for(int i=1;i<=num;i++){
+    				  for(int space=1;space<i;space++){
+    					  System.out.print(" ");
+    				  }
+    				 for(int j=i;j<=num;j++){
+    					 System.out.print("*");
+    				 }
+    				 System.out.println();
+    			 }
+    		}else {
+    			System.out.println(-2);
+    		}
+    }
+	 
+}
+=========================================================================================================================================================================
+FOP_45:
+For a given method write the logic to print hollow inverted right triangle star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print hollow inverted right triangle star pattern
+
+Constraints:
+5<=N<=15
+
+Specification: The method hollowInvertedRightTrianglePattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print hollow inverted right triangle star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*****
+*  *
+* *
+**
+*
+Sample Input2:
+21
+Sample Output2:
+-2
+Sample Input3:
+-9
+Sample Output3:
+-1
+ 
+Input4:
+6
+Output4:
+******
+*   *
+*  *
+* *
+**
+*
+Input5:
+7
+Output5:
+*******
+*    *
+*   *
+*  *
+* *
+**
+*
+Input6:
+8
+Output6:
+********
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
+Input7:
+9
+Output7:
+*********
+*      *
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
+Input8:
+10
+Output8:
+**********
+*       *
+*      *
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
+Input9:
+11
+Output9:
+***********
+*        *
+*       *
+*      *
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
+Input10:
+14
+Output10:
+**************
+*           *
+*          *
+*         *
+*        *
+*       *
+*      *
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowInvertedRightTrianglePattern(num);
+	}
+
+	public static void hollowInvertedRightTrianglePattern(int num) {
+		 		//write the code here...
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowInvertedRightTrianglePattern(num);
+	}
+
+	public static void hollowInvertedRightTrianglePattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <= num; i++) {
+				for (int j = i; j <= num; j++) {
+					if (i== 1 || j == i || j== num)
+						System.out.print("*");
+					else
+						System.out.print(" ");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+==============================================================================================================================================================
+FOP_46:
+For a given method write the logic to print hollow mirrored inverted right triangle star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print hollow mirrored inverted right triangle star pattern.
+
+
+Constraints:
+5<=N<=15
+
+Specification: The method hollowMirroredInvertedRightTrianglePattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise  to print hollow mirrored inverted right triangle star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*****
+ *  *
+  * *
+   **
+    *
+Sample Input2:
+2
+Sample Output2:
+-2
+Sample Input3:
+0
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+******
+ *   *
+  *  *
+   * *
+    **
+     *
+Input5:
+7
+Output5:
+*******
+ *    *
+  *   *
+   *  *
+    * *
+     **
+      *
+Input6:
+8
+Output6:
+********
+ *     *
+  *    *
+   *   *
+    *  *
+     * *
+      **
+       *
+Input7:
+10
+Output7:
+**********
+ *       *
+  *      *
+   *     *
+    *    *
+     *   *
+      *  *
+       * *
+        **
+         *
+Input8:
+11
+Output8:
+***********
+ *        *
+  *       *
+   *      *
+    *     *
+     *    *
+      *   *
+       *  *
+        * *
+         **
+          *
+Input9:
+12
+Output9:
+************
+ *         *
+  *        *
+   *       *
+    *      *
+     *     *
+      *    *
+       *   *
+        *  *
+         * *
+          **
+           *
+Input10:
+-15
+Output10:
+-1
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowMirroredInvertedRightTrianglePattern(num);
+	}
+
+	public static void hollowMirroredInvertedRightTrianglePattern(int num) {
+		 //write the code here...
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowMirroredInvertedRightTrianglePattern(num);
+	}
+
+	public static void hollowMirroredInvertedRightTrianglePattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <= num; i++) {
+				  for(int space=1;space<i;space++){
+					  System.out.print(" ");
+				  }
+				for (int j = i; j <= num; j++) {
+					if (i== 1 || j == i || j== num)
+						System.out.print("*");
+					else
+						System.out.print(" ");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+===============================================================================================================================================
+FOP_47 : 
+For a given method write the logic to print Equilateral triangle (Pyramid) star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print Equilateral triangle (Pyramid) star pattern.
+
+
+Constraints:
+5<=N<=15
+
+Specification: The method pyramidStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise  to print Equilateral triangle (Pyramid) star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   ***
+  *****
+ *******
+*********
+Sample Input2:
+2
+Sample Output2:
+-2
+Sample Input3:
+-6
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+Input5:
+7
+Output5:
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+Input6:
+8
+Output6:
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+Input7:
+10
+Output7:
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+Input8:
+9
+Output8:
+        *
+       ***
+      *****
+     *******
+    *********
+   ***********
+  *************
+ ***************
+*****************
+Input9:
+11
+Output9:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+    *************
+   ***************
+  *****************
+ *******************
+*********************
+Input10:
+31
+Output10:
+-2
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		pyramidStarPattern(num);
+	}
+
+	public static void pyramidStarPattern(int num) {
+		 //write the code here.
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		pyramidStarPattern(num);
+	}
+
+	public static void pyramidStarPattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <= num; i++) {
+				  for(int space=i;space<num;space++){
+					  System.out.print(" ");
+				  }
+				for (int j = 1; j <=(2*i-1); j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+====================================================================================================================================
+FOP_48:
+For a given method write the logic to print reverse Pyramid star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print reverse Pyramid star pattern.
+
+
+Constraints:
+5<=N<=15
+
+Specification: The method reversePyramidStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise to print reverse Pyramid star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*********
+ *******
+  *****
+   ***
+    *
+Sample Input2:
+4
+Sample Output2:
+-2
+Sample Input3:
+-7
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+Input5:
+7
+Output5:
+*************
+ ***********
+  *********
+   *******
+    *****
+     ***
+      *
+Input6:
+8
+Output6:
+***************
+ *************
+  ***********
+   *********
+    *******
+     *****
+      ***
+       *
+Input7:
+9
+Output7:
+*****************
+ ***************
+  *************
+   ***********
+    *********
+     *******
+      *****
+       ***
+        *
+Input8:
+11
+Output8:
+*********************
+ *******************
+  *****************
+   ***************
+    *************
+     ***********
+      *********
+       *******
+        *****
+         ***
+          *
+Input9:
+31
+Output9:
+-2
+Input10:
+20
+Output10:
+-2
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reversePyramidStarPattern(num);
+	}
+
+	public static void reversePyramidStarPattern(int num) {
+		  //write the code here...
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		reversePyramidStarPattern(num);
+	}
+
+	public static void reversePyramidStarPattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <=num; i++) {
+				  for(int space=1;space<i;space++){
+					  System.out.print(" ");
+				  }
+				for (int j = 1; j <=(num*2-(2*i-1)); j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+=====================================================================================================================================
+FOP_49:
+For a given method write the logic to print hollow pyramid (Equilateral triangle) star pattern.
+
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print hollow pyramid (Equilateral triangle) star pattern.
+
+
+Constraints:
+5<=N<=15
+
+Specification: The method hollowPyramidStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise  to print hollow pyramid (Equilateral triangle) star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   * *
+  *   *
+ *     *
+*********
+Sample Input2:
+3
+Sample Output2:
+-2
+Sample Input3:
+-10
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+     *
+    * *
+   *   *
+  *     *
+ *       *
+***********
+Input5:
+7
+Output5:
+      *
+     * *
+    *   *
+   *     *
+  *       *
+ *         *
+*************
+Input6:
+8
+Output6:
+       *
+      * *
+     *   *
+    *     *
+   *       *
+  *         *
+ *           *
+***************
+Input7:
+9
+Output7:
+        *
+       * *
+      *   *
+     *     *
+    *       *
+   *         *
+  *           *
+ *             *
+*****************
+Input8:
+19
+Output8:
+-2
+Input9:
+11
+Output9:
+          *
+         * *
+        *   *
+       *     *
+      *       *
+     *         *
+    *           *
+   *             *
+  *               *
+ *                 *
+*********************
+Input10:
+100
+Output10:
+-2
+
+Templet:
+=======
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowPyramidStarPattern(num);
+	}
+
+	public static void hollowPyramidStarPattern(int num) {
+				//write the code here...		 
+	}
+
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowPyramidStarPattern(num);
+	}
+
+	public static void hollowPyramidStarPattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <=num; i++) {
+				  for(int space=i;space<num;space++){
+					  System.out.print(" ");
+				  }
+				for (int j = 1; j <=(2*i-1); j++) {
+					 if(i==num || j==1 || j==(2*i-1))
+					System.out.print("*");
+					 else
+					System.out.print(" ");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+===========================================================================================================================
+FOP_50:
+For a given method write the logic to print hollow inverted pyramid star pattern.
+
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print hollow inverted pyramid star pattern.
+
+
+Constraints:
+5<=N<=15
+
+Specification: The method hollowInvertedPyramidStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise  print hollow inverted pyramid star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*********
+ *     *
+  *   *
+   * *
+    *
+Sample Input2:
+2
+Sample Output2:
+-2
+Sample Input3:
+-10
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+***********
+ *       *
+  *     *
+   *   *
+    * *
+     *
+Input5:
+7
+Output5:
+*************
+ *         *
+  *       *
+   *     *
+    *   *
+     * *
+      *
+Input6:
+8
+Output6:
+***************
+ *           *
+  *         *
+   *       *
+    *     *
+     *   *
+      * *
+       *
+Input7:
+9
+Output7:
+*****************
+ *             *
+  *           *
+   *         *
+    *       *
+     *     *
+      *   *
+       * *
+        *
+Input8:
+2001
+Output8:
+-2
+Input9:
+2343
+Output9:
+-2
+Input10:
+-123
+Output10:
+-1
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowInvertedPyramidStarPattern(num);
+	}
+
+	public static void hollowInvertedPyramidStarPattern(int num) {
+		   //write the code here...
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		hollowInvertedPyramidStarPattern(num);
+	}
+
+	public static void hollowInvertedPyramidStarPattern(int num) {
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i <=num; i++) {
+				  for(int space=1;space<i;space++){
+					  System.out.print(" ");
+				  }
+				for (int j = 1; j <=(num*2-(2*i-1)); j++) {
+					 if(i==1||j==1||j==(num*2-(2*i-1)))
+					System.out.print("*");
+					 else
+					System.out.print(" ");
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println(-2);
+		}
+	}
+
+}
+======================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
