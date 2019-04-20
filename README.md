@@ -7467,3 +7467,3327 @@ public class Test {
 
 }
 ======================================================================================================================================
+						FOP_51 to FOP_100
+====================================================================================================================================
+Program   : FOP_51
+Language  : Java
+Level     : Medium
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+Problem Statement:   
+For a given method write the logic to print half diamond star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print half diamond star pattern.
+
+Constraints:
+5<=N<=15
+
+Specification: The method halfDiamondStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise  print half diamond star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+Sample Input2:
+-7
+Sample Output2:
+-1
+Sample Input3:
+20
+Sample Output3:
+-2
+Input4:
+6
+Output4:
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+Input5:
+7
+Output5:
+*
+**
+***
+****
+*****
+******
+*******
+******
+*****
+****
+***
+**
+*
+Input6:
+8
+Output6:
+*
+**
+***
+****
+*****
+******
+*******
+********
+*******
+******
+*****
+****
+***
+**
+Input7:
+3
+Output7:
+-2
+Input8:
+122331
+Output8:
+-2
+Input9:
+-19928
+Output9:
+-1
+Input10:
+9
+Output10:
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		halfDiamondStarPattern(num);
+	}
+
+	public static void halfDiamondStarPattern(int num) {
+		 	//write the code here..
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		halfDiamondStarPattern(num);
+	}
+
+	public static void halfDiamondStarPattern(int num) {
+		int column = 1;
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i < num * 2; i++) {
+				for (int j = 1; j <= column; j++) {
+					System.out.print("*");
+				}
+				if (i < num) {
+					column++;
+				} else {
+					column--;
+				}
+				System.out.println();
+			}
+
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+==================================================================================================================
+Program   : FOP_52
+Language  : Java
+Level     : Medium
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+Problem Statement: 
+
+For a given method write the logic to print mirrored half diamond star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print mirrored half diamond star pattern.
+
+Constraints:
+5<=N<=15
+
+Specification: The method mirroredHalfDiamondStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print mirrored half diamond star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+Sample Input2:
+3
+Sample Output2:
+-2
+Sample Input3:
+-10
+Sample Output3:
+-1
+Input4:
+6
+Output4:
+     *
+    **
+   ***
+  ****
+ *****
+******
+ *****
+  ****
+   ***
+    **
+     *
+Input5:
+7
+Output5:
+      *
+     **
+    ***
+   ****
+  *****
+ ******
+*******
+ ******
+  *****
+   ****
+    ***
+     **
+      *
+Input6:
+9990
+Output6:
+-2
+Input7:
+-2221
+Output7:
+-1
+Input8:
+71
+Output8:
+-2
+Input9:
+8
+Output9:
+       *
+      **
+     ***
+    ****
+   *****
+  ******
+ *******
+********
+ *******
+  ******
+   *****
+    ****
+     ***
+      **
+       *
+Input10:
+10
+Output10:
+         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********
+ *********
+  ********
+   *******
+    ******
+     *****
+      ****
+       ***
+        **
+         *
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		halfDiamondStarPattern(num);
+	}
+
+	public static void halfDiamondStarPattern(int num) {
+		 		//write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		halfDiamondStarPattern(num);
+	}
+
+	public static void halfDiamondStarPattern(int num) {
+		int column = 1;
+		int space = num-1;
+		 
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i < num * 2; i++) {
+				for(int k=1;k<=space;k++){
+					System.out.print(" ");
+				}
+				for (int j = 1; j <= column; j++) {
+					System.out.print("*");
+				}
+				if (i < num) {
+					column++;
+					space--;
+				} else {
+					column--;
+					space++;
+				}
+				System.out.println();
+			}
+
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+==========================================================================================================================
+Program   : FOP_53
+Language  : Java
+Level     : Hard
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+For a given method write the logic to print diamond star pattern.
+
+Input  Format  : Take N as input of type integer.
+Output Format  : Print diamond star pattern.
+
+Constraints:
+5<=N<=15
+
+Specification: The method diamondStarPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is not in a range of above constraints then, print -2.
+-Otherwise print diamond star pattern.
+
+Sample Input1:
+5
+Sample Output1:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+Sample Input2:
+1
+Sample Output2:
+-2
+Sample Input3:
+20
+Sample Output3:
+-2
+Input4:
+6
+Output4:
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+Input5:
+7
+Output5:
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+ ***********
+  *********
+   *******
+    *****
+     ***
+      *
+Input6:
+999
+Output6:
+-2
+Input7:
+-166
+Output7:
+-1
+Input8:
+8
+Output8:
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+ *************
+  ***********
+   *********
+    *******
+     *****
+      ***
+       *
+Input9:
+11
+Output9:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+    *************
+   ***************
+  *****************
+ *******************
+*********************
+ *******************
+  *****************
+   ***************
+    *************
+     ***********
+      *********
+       *******
+        *****
+         ***
+          *
+Input10:
+100
+Output10:
+-2
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		diamondStarPattern(num);
+	}
+
+	public static void diamondStarPattern(int num) {
+		 	//write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		diamondStarPattern(num);
+	}
+
+	public static void diamondStarPattern(int num) {
+		int column = 1;
+		int space = num-1;
+		 
+		if (num <= 0) {
+			System.out.println(-1);
+		} else if (num >= 5 && num <= 15) {
+			for (int i = 1; i < num * 2; i++) {
+				for(int k=1;k<=space;k++){
+					System.out.print(" ");
+				}
+				for (int j = 1; j <column*2; j++) {
+					System.out.print("*");
+				}
+				if (i < num) {
+					column++;
+					space--;
+				} else {
+					column--;
+					space++;
+				}
+				System.out.println();
+			}
+
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+======================================================================================================
+Program   : FOP_54
+Language  : Java
+Level     : Easy
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+
+For a given method write the logic to print 0 or 1 square number pattern.
+
+Input  Format  : Input number of rows and columns to print from user. 
+Store it in some variable say rows and cols.
+Output Format  : Print 0 or 1 square number pattern.
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method squareNumberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise print 0 or 1 square number pattern..
+
+ 
+Sample Input1:
+5  5
+Sample Output1:
+11111
+11111
+11111
+11111
+11111
+Sample Input2:
+6 -7
+Sample Output2:
+-1
+Sample Input3:
+0 5
+Sample Output3:
+-1
+Input4:
+1 10
+Output4:
+-2
+Input5:
+6 6 
+Output5:
+111111
+111111
+111111
+111111
+111111
+111111
+Input6:
+6 6 
+Output6:
+111111
+111111
+111111
+111111
+111111
+111111
+Input7:
+5 10
+Output7:
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+Input8:
+6 9
+Output8:
+111111111
+111111111
+111111111
+111111111
+111111111
+111111111
+Input9:
+7 10
+Output9:
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+1111111111
+Input10:
+6 8
+Output10:
+11111111
+11111111
+11111111
+11111111
+11111111
+11111111
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		squareNumberPattern(rows, cols);
+	}
+
+	public static void squareNumberPattern(int rows, int cols) {
+				//write the code here...		 
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		squareNumberPattern(rows, cols);
+	}
+
+	public static void squareNumberPattern(int rows, int cols) {
+
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+			for (int i = 1; i <= rows; i++) {
+				for (int j = 1; j <= cols; j++) {
+					System.out.print(1);
+				}
+				System.out.println();
+			}
+
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+====================================================================================================================
+Program   : FOP_55
+Language  : Java
+Level     : Easy
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+Problem Statement :
+For a given method write the logic to print number pattern with 1, 0 at alternate rows.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+				 
+Output Format  : Second line Print the number pattern with 1, 0 at alternate rows.
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise print number pattern with 1, 0 at alternate rows.
+
+Sample Input1:
+5 5
+Sample Output1
+11111
+00000
+11111
+00000
+11111
+
+Sample Input2:
+5 12
+Sample Output2:
+-2
+Sample Input3:
+-6 6
+Sample Output3:
+-1
+Input4:
+6 8
+Output4:
+11111111
+00000000
+11111111
+00000000
+11111111
+00000000
+Input5:
+6 9
+Output5:
+111111111
+000000000
+111111111
+000000000
+111111111
+000000000
+Input6:
+7 5
+Output6:
+11111
+00000
+11111
+00000
+11111
+00000
+11111
+Input7:
+8 5
+Output7:
+11111
+00000
+11111
+00000
+11111
+00000
+11111
+00000
+Input8:
+9 4
+Output8:
+1111
+0000
+1111
+0000
+1111
+0000
+1111
+0000
+1111
+Input9:
+3 10
+Output9:
+1111111111
+0000000000
+1111111111
+Input10:
+4 7
+Output10:
+1111111
+0000000
+1111111
+0000000
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+ 				//write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+			 for(int i=1;i<=rows;i++) {
+				 for(int j=1;j<=cols;j++) {
+					 if(i%2==1){
+						 System.out.print(1);
+					 }else{
+						 System.out.print(0);
+					 }
+				 }
+				 System.out.println();
+			 }
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+=======================================================================================================================
+Program   : FOP_56
+Language  : Java
+Level     : Easy
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+
+For a given method write the logic to print number pattern with 1, 0 at even/odd columns.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+				 
+Output Format  : Second line print number pattern with 1, 0 at even/odd columns.  
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise print number pattern with 1, 0 at even/odd columns.
+
+
+Sample Input1:
+5 5
+Sample Output1:
+01010
+01010
+01010
+01010
+01010
+Sample Input2:
+-10 5
+Sample Output2:
+-1
+Sample Input3:
+12 13
+Sample Output3:
+-2
+Input4:
+6 6
+Output4:
+010101
+010101
+010101
+010101
+010101
+010101
+Input5:
+7 4
+Output5:
+0101
+0101
+0101
+0101
+0101
+0101
+0101
+Input6:
+5 8
+Output6:
+01010101
+01010101
+01010101
+01010101
+01010101
+Input7:
+7 9
+Output7:
+010101010
+010101010
+010101010
+010101010
+010101010
+010101010
+010101010
+Input8:
+8 7
+Output8:
+0101010
+0101010
+0101010
+0101010
+0101010
+0101010
+0101010
+0101010
+Input9:
+5 3
+Output9:
+010
+010
+010
+010
+010
+Input10:
+8 8
+Output10:
+01010101
+01010101
+01010101
+01010101
+01010101
+01010101
+01010101
+01010101
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+ 					//write the code here....
+	}
+} 
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+			 for(int i=1;i<=rows;i++) {
+				 for(int j=1;j<=cols;j++) {
+					 if(j%2==1){
+						 System.out.print(0);
+					 }else{
+						 System.out.print(1);
+					 }
+				 }
+				 System.out.println();
+			 }
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+================================================================================================================
+Program   : FOP_57
+Language  : Java
+Level     : Easy
+Module    : Fundamental of Programming
+Topic     : Control Statements 
+Subtopic  : Loops
+Problem Statement : 
+For a given method write the logic to print number pattern at even/odd columns.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+				 
+Output Format  : Second line to print number pattern at even/odd columns.  
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise  to print number pattern at even/odd columns.
+
+Sample Input1:
+5 5
+Sample Output1:
+10101
+10101
+10101
+10101
+10101
+Sample Input2:
+5 0
+Sample Output2:
+-1
+Sample Input3:
+12 21
+Sample Output3:
+-2
+Input4:
+6 5
+Output4:
+10101
+10101
+10101
+10101
+10101
+10101
+Input5:
+7 6
+Output5:
+101010
+101010
+101010
+101010
+101010
+101010
+101010
+Input6:
+3 8
+Output6:
+10101010
+10101010
+10101010
+Input7:
+9 8
+Output7:
+10101010
+10101010
+10101010
+10101010
+10101010
+10101010
+10101010
+10101010
+10101010
+Input8:
+4 5
+Output8:
+10101
+10101
+10101
+10101
+Input9:
+3 3
+Output9:
+101
+101
+101
+Input10:
+8 9
+Output10:
+101010101
+101010101
+101010101
+101010101
+101010101
+101010101
+101010101
+101010101
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+ 				//write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+			 for(int i=1;i<=rows;i++) {
+				 for(int j=1;j<=cols;j++) {
+					 if(j%2==0){
+						 System.out.print(0);
+					 }else{
+						 System.out.print(1);
+					 }
+				 }
+				 System.out.println();
+			 }
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+==================================================================================================================
+Program   		  : FOP_58
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic to print chessboard number pattern with 1 and 0.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print chessboard number pattern with 1 and 0.  
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise to print chessboard number pattern with 1 and 0.
+
+Sample Input1:
+5 5
+Sample Output1:
+10101
+01010
+10101
+01010
+10101
+Sample Input2:
+12 12
+Sample Output2:
+-2
+Sample Input3:
+-6 -6
+Sample Output3:
+-1
+Input4:
+6 6
+Output4:
+101010
+010101
+101010
+010101
+101010
+010101
+Input5:
+6 7
+Output5:
+1010101
+0101010
+1010101
+0101010
+1010101
+0101010
+Input6:
+8 8
+Output6:
+10101010
+01010101
+10101010
+01010101
+10101010
+01010101
+10101010
+01010101
+Input7:
+9 9
+Output7:
+101010101
+010101010
+101010101
+010101010
+101010101
+010101010
+101010101
+010101010
+101010101
+Input8:
+10 10
+Output8:
+1010101010
+0101010101
+1010101010
+0101010101
+1010101010
+0101010101
+1010101010
+0101010101
+1010101010
+0101010101
+Input9:
+8 4
+Output9:
+1010
+0101
+1010
+0101
+1010
+0101
+1010
+0101
+Input10:
+7 7
+1010101
+0101010
+1010101
+0101010
+1010101
+0101010
+1010101
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the logic here...
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+			int pass  =1;
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+			 for(int i=1;i<=rows;i++) {
+				 for(int j=1;j<=cols;j++) {
+					 if(pass==1){
+						 System.out.print(1);
+					 }else{
+						 System.out.print(0);
+					 }
+					 //update the pass
+					 pass = pass*-1;
+				 }
+				 if(cols%2==0){
+					 pass = pass*-1;
+				 }
+				 System.out.println();
+			 }
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+===============================================================================================================
+Program   		  : FOP_59
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement :
+For a given method write the logic to print box number pattern with 1 and 0.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print box number pattern with 1 and 0.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise to print box number pattern with 1 and 0.
+
+Sample Input1:
+5 5
+Sample Output1:
+11111
+10001
+10001
+10001
+11111
+Sample Input2:
+1 2
+Sample Output2:
+-2
+Sample Input3:
+-6 -6
+Sample Output3:
+-1
+Input4:
+6 6
+Output4:
+111111
+100001
+100001
+100001
+100001
+111111
+Input5:
+7 7
+Output5:
+1111111
+1000001
+1000001
+1000001
+1000001
+1000001
+1111111
+Input6:
+6 8
+Output6:
+11111111
+10000001
+10000001
+10000001
+10000001
+11111111
+Input7:
+6 9
+Output7:
+111111111
+100000001
+100000001
+100000001
+100000001
+111111111
+Input8:
+7 10
+Output8:
+1111111111
+1000000001
+1000000001
+1000000001
+1000000001
+1000000001
+1111111111
+Input9:
+9 11
+Output9:
+11111111111
+10000000001
+10000000001
+10000000001
+10000000001
+10000000001
+10000000001
+10000000001
+11111111111
+Input10:
+6 12
+Output10:
+111111111111
+100000000001
+100000000001
+100000000001
+100000000001
+111111111111
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+ 				//write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+			for (int i = 1; i <= rows; i++) {
+				for (int j = 1; j <= cols; j++) {
+					/*
+					 * Print 1 if its first or last row Print 1 if its first or
+					 * last column
+					 */
+					if (i == 1 || i == rows || j == 1 || j == cols) {
+						System.out.print("1");
+					} else {
+						System.out.print("0");
+					}
+				}
+
+				System.out.print("\n");
+			}
+		} else {
+			System.out.println("-2");
+		}
+	}
+}
+==========================================================================================================================================
+Program   		  : FOP_60
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement :
+For a given method write the logic  to print box number pattern of 1 and 0 with cross center.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line  to print box number pattern of 1 and 0 with cross center.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows and columns both are not equal and if Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise  to print box number pattern of 1 and 0 with cross center.
+
+
+Sample Input1:
+5 5
+Sample Output1:
+10001
+01010
+00100
+01010
+10001
+Sample Input2:
+6 5
+Sample Output2:
+-2
+Sample Intput3:
+-5 -5
+Sample Output3:
+-1
+Input4:
+6 6
+Output4:
+100001
+010010
+001100
+001100
+010010
+100001
+Input5:
+7 7
+Output5:
+1000001
+0100010
+0010100
+0001000
+0010100
+0100010
+1000001
+Input6:
+8 8
+Output6:
+10000001
+01000010
+00100100
+00011000
+00011000
+00100100
+01000010
+10000001
+Input7:
+9 9
+Output7:
+100000001
+010000010
+001000100
+000101000
+000010000
+000101000
+001000100
+010000010
+100000001
+Input8:
+11 11
+Output8:
+10000000001
+01000000010
+00100000100
+00010001000
+00001010000
+00000100000
+00001010000
+00010001000
+00100000100
+01000000010
+10000000001
+Input9:
+10 10
+Output9:
+1000000001
+0100000010
+0010000100
+0001001000
+0000110000
+0000110000
+0001001000
+0010000100
+0100000010
+1000000001
+Input10:
+12 16
+Output10:
+-2
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		   //write the code here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows == cols) {
+			if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+				for (int i = 1; i <= rows; i++) {
+					for (int j = 1; j <= cols; j++) {
+						if (i == j || (j == (cols + 1) - i)) {
+							System.out.print(1);
+						} else {
+							System.out.print(0);
+						}
+					}
+
+					System.out.println();
+				}
+			}
+		} else {
+				System.out.println(-2);
+		}
+	}
+}
+==================================================================================================================================
+Program   		  : FOP_61
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to print circle box number pattern with 1 and 0.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line   to print circle box number pattern with 1 and 0.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise  to print circle box number pattern with 1 and 0.
+
+Sample Input1:
+5 5
+Sample Output1:
+01110
+10001
+10001
+10001
+01110
+Sample Input2:
+6 0
+Sample Output2:
+-1
+Sample Input3:
+10 16
+Sample Output3:
+-2
+Input4:
+6 7
+Output4:
+0111110
+1000001
+1000001
+1000001
+1000001
+0111110
+Input5:
+7 7
+Output5:
+0111110
+1000001
+1000001
+1000001
+1000001
+1000001
+0111110
+Input6:
+8 6
+Output6:
+011110
+100001
+100001
+100001
+100001
+100001
+100001
+011110
+Input7:
+9 8
+Output7:
+01111110
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+01111110
+Input8:
+6 10
+Output8:
+0111111110
+1000000001
+1000000001
+1000000001
+1000000001
+0111111110
+Input9:
+7 10
+Output9:
+0111111110
+1000000001
+1000000001
+1000000001
+1000000001
+1000000001
+0111111110
+Input10:
+6 12
+Output10:
+011111111110
+100000000001
+100000000001
+100000000001
+100000000001
+011111111110
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the logic here..
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		}else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+				for (int i = 1; i <= rows; i++) {
+					for (int j = 1; j <= cols; j++) {
+						// Print corner element
+						if ((i == 1 || i == rows) && (j == 1 || j == cols)) {
+							System.out.print(0);
+						} else if (i == 1 || i == rows || j == 1 || j == cols) {
+							// Print edge
+							System.out.print(1);
+						} else {
+							// Print center
+							System.out.print(0);
+						}
+					}
+
+					System.out.println();
+				}
+			
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+=========================================================================================================================================================
+Program   		  : FOP_62
+Language 		  : Java
+Level    		  : Easy
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to basic number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print basic number pattern.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise to print the basic number pattern.
+
+Sample Input1:
+5 5
+Sample Output1:
+11111
+22222
+33333
+44444
+55555
+Sample Input2:
+6 -6
+Sample Output2:
+-1
+Sample Input3:
+12 20
+Sample Output3:
+-2
+
+Input4:
+6 7 
+Output4:
+1111111
+2222222
+3333333
+4444444
+5555555
+6666666
+
+Input5:
+7 8
+Output5:
+11111111
+22222222
+33333333
+44444444
+55555555
+66666666
+77777777
+Input6:
+8 9
+Output6:
+111111111
+222222222
+333333333
+444444444
+555555555
+666666666
+777777777
+888888888
+
+Input7:
+9 10
+Output7:
+1111111111
+2222222222
+3333333333
+4444444444
+5555555555
+6666666666
+7777777777
+8888888888
+9999999999
+
+Input8:
+7 12
+Output8:
+111111111111
+222222222222
+333333333333
+444444444444
+555555555555
+666666666666
+777777777777
+Input9:
+9 14
+Output9:
+11111111111111
+22222222222222
+33333333333333
+44444444444444
+55555555555555
+66666666666666
+77777777777777
+88888888888888
+99999999999999
+
+Input10:
+5 15
+Output10:
+111111111111111
+222222222222222
+333333333333333
+444444444444444
+555555555555555
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the code here...
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		}else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+				for (int i = 1; i <= rows; i++) {
+					for (int j = 1; j <= cols; j++) {
+						  System.out.print(i);
+					}
+
+					System.out.println();
+				}
+			
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+=====================================================================================================================================================================
+Program   		  : FOP_63
+Language 		  : Java
+Level    		  : Easy
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to basic number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print basic number pattern.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise to print the basic number pattern.
+
+Sample Input1:
+5 5
+Sample Output1:
+12345
+12345
+12345
+12345
+12345
+
+Sample Input2:
+-10 12
+Sample Output2:
+-1
+
+Sample Input3:
+16 17
+Sample Output3:
+-2
+
+Input4:
+6 7
+Output4:
+1234567
+1234567
+1234567
+1234567
+1234567
+1234567
+
+Input5:
+7 8
+Output5:
+12345678
+12345678
+12345678
+12345678
+12345678
+12345678
+12345678
+
+Input6:
+5 10
+Output6:
+12345678910
+12345678910
+12345678910
+12345678910
+12345678910
+
+Input7:
+6 12
+Output7:
+123456789101112
+123456789101112
+123456789101112
+123456789101112
+123456789101112
+123456789101112
+ 
+Input8:
+7 14
+Output8:
+1234567891011121314
+1234567891011121314
+1234567891011121314
+1234567891011121314
+1234567891011121314
+1234567891011121314
+1234567891011121314
+
+Input9:
+7 7
+Output9:
+1234567
+1234567
+1234567
+1234567
+1234567
+1234567
+1234567
+
+Input10:
+8 6
+Output10:
+123456
+123456
+123456
+123456
+123456
+123456
+123456
+123456
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the code here...
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		}else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+				for (int i = 1; i <= rows; i++) {
+					for (int j = 1; j <= cols; j++) {
+						  System.out.print(j);
+					}
+
+					System.out.println();
+				}
+			
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+==============================================================================================================================
+Program   		  : FOP_64
+Language 		  : Java
+Level    		  : Easy
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to basic number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print basic number pattern.  
+
+Constraints:
+2<=ROWS<=10
+2<=COLUMNS<=10
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or Columns is not in a range of above constraints then, print -2.
+-Otherwise to print the basic number pattern.
+
+Sample Input1:
+5 5 
+Sample Output1:
+12345
+23456
+34567
+45678
+56789
+
+Sample Input2:
+-4 -5
+Sample Output2:
+-1
+
+Sample Input3:
+11 12
+Sample Output3:
+-2
+
+Input4:
+3 3
+Output4:
+123
+234
+345
+
+Input5:
+4 4
+Output5:
+1234
+2345
+3456
+4567
+
+Input6:
+6 6
+Output6:
+123456
+234567
+345678
+456789
+5678910
+67891011
+
+Input7:
+5 6
+Output7:
+123456
+234567
+345678
+456789
+5678910
+
+Input8:
+6 8
+Output8:
+12345678
+23456789
+345678910
+4567891011
+56789101112
+678910111213
+
+Input9:
+7 7
+Output9:
+1234567
+2345678
+3456789
+45678910
+567891011
+6789101112
+78910111213
+
+Input10:
+5 8
+Output10:
+12345678
+23456789
+345678910
+4567891011
+56789101112
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 	//write the code here...
+	}
+}
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		}else if (rows >= 2 && rows <= 10 && cols >= 2 && cols <= 10) {
+				for (int i = 1; i <= rows; i++) {
+					for (int j = i; j<cols+i; j++) {
+						  System.out.print(j);
+					}
+
+					System.out.println();
+				}
+			
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+===================================================================================================================================================
+Program   		  : FOP_65
+Language 		  : Java
+Level    		  : Easy
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to basic number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print basic number pattern were each column number gets printed in an incremented fashion.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or  Columns  is not in a range of above constraints then, print -2.
+-Otherwise to print basic number pattern were each column number gets printed in an incremented fashion.
+
+Sample Input1:
+5 5
+Sample Output1:
+1  2  3  4  5  
+6  7  8  9  10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25 
+
+Sample Input2:
+2 2
+Sample Output2:
+-2
+
+Sample Input3:
+-5 -7
+Sample Output3:
+-1
+
+Input4:
+6 6
+Output4:
+1  2  3  4  5  6  
+7  8  9  10 11 12 
+13 14 15 16 17 18 
+19 20 21 22 23 24 
+25 26 27 28 29 30 
+31 32 33 34 35 36 
+
+Input5:
+7 5
+Output5:
+1  2  3  4  5  
+6  7  8  9  10 
+11 12 13 14 15 
+16 17 18 19 20 
+21 22 23 24 25 
+26 27 28 29 30 
+31 32 33 34 35 
+
+Input6:
+7 8
+Output6:
+1  2  3  4  5  6  7  8  
+9  10 11 12 13 14 15 16 
+17 18 19 20 21 22 23 24 
+25 26 27 28 29 30 31 32 
+33 34 35 36 37 38 39 40 
+41 42 43 44 45 46 47 48 
+49 50 51 52 53 54 55 56 
+
+Input7:
+8 9
+Output7:
+1  2  3  4  5  6  7  8  9  
+10 11 12 13 14 15 16 17 18 
+19 20 21 22 23 24 25 26 27 
+28 29 30 31 32 33 34 35 36 
+37 38 39 40 41 42 43 44 45 
+46 47 48 49 50 51 52 53 54 
+55 56 57 58 59 60 61 62 63 
+64 65 66 67 68 69 70 71 72 
+
+Input8:
+9 10
+Output8:
+1  2  3  4  5  6  7  8  9  10 
+11 12 13 14 15 16 17 18 19 20 
+21 22 23 24 25 26 27 28 29 30 
+31 32 33 34 35 36 37 38 39 40 
+41 42 43 44 45 46 47 48 49 50 
+51 52 53 54 55 56 57 58 59 60 
+61 62 63 64 65 66 67 68 69 70 
+71 72 73 74 75 76 77 78 79 80 
+81 82 83 84 85 86 87 88 89 90 
+
+Input9:
+6 9
+Output9:
+1  2  3  4  5  6  7  8  9  
+10 11 12 13 14 15 16 17 18 
+19 20 21 22 23 24 25 26 27 
+28 29 30 31 32 33 34 35 36 
+37 38 39 40 41 42 43 44 45 
+46 47 48 49 50 51 52 53 54 
+
+Input10:
+11 6
+Output10:
+1  2  3  4  5  6  
+7  8  9  10 11 12 
+13 14 15 16 17 18 
+19 20 21 22 23 24 
+25 26 27 28 29 30 
+31 32 33 34 35 36 
+37 38 39 40 41 42 
+43 44 45 46 47 48 
+49 50 51 52 53 54 
+55 56 57 58 59 60 
+61 62 63 64 65 66 
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 	//write the code here..
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		}else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+				  int num = 1;
+				for (int i = 1; i <= rows; i++) {
+					for (int j = 1; j<=cols; j++) {
+						  System.out.printf("%-3d",num++);//3 trailing space (1   2)
+					}
+					System.out.println();
+				}
+			
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+===================================================================================================================================
+Program   		  : FOP_66
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to print tricky number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print tricky number pattern.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or  Columns  is not in a range of above constraints then, print -2.
+-Otherwise to print tricky number pattern.
+
+Sample Input1:
+5 5
+Sample Output1:
+55555
+54444
+54333
+54322
+54321
+
+Sample Input2:
+-6 -6
+Sample Output2:
+-1
+
+Sample Input3:
+16 15
+Sample Output3:
+-2
+
+Input4:
+6 7
+Output4:
+7666666
+7655555
+7654444
+7654333
+7654322
+7654321
+
+Input5:
+7 8
+Output5:
+87777777
+87666666
+87655555
+87654444
+87654333
+87654322
+87654321
+
+Input6:
+8 9
+Output6:
+988888888
+987777777
+987666666
+987655555
+987654444
+987654333
+987654322
+987654321
+
+Input7:
+9 10
+Output7:
+10999999999
+10988888888
+10987777777
+10987666666
+10987655555
+10987654444
+10987654333
+10987654322
+10987654321
+
+Input8:
+11 12
+Output8:
+121111111111111111111111
+121110101010101010101010
+121110999999999
+121110988888888
+121110987777777
+121110987666666
+121110987655555
+121110987654444
+121110987654333
+121110987654322
+121110987654321
+ 
+Input9:
+5 6
+Output9:
+655555
+654444
+654333
+654322
+654321
+ 
+Input10:
+12 13
+Ouput10:
+13121212121212121212121212
+13121111111111111111111111
+13121110101010101010101010
+13121110999999999
+13121110988888888
+13121110987777777
+13121110987666666
+13121110987655555
+13121110987654444
+13121110987654333
+13121110987654322
+13121110987654321
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the code here...
+	}
+} 
+
+Solution:
+=========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+			for (int i = 1; i <= rows; i++) {
+					for(int j=cols;j>cols-i;j--){
+						System.out.print(j);
+					}
+					for(int k=1;k<=cols-i;k++){
+						System.out.print(rows-i+1);
+					}
+					System.out.println();
+			}
+
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+=========================================================================================================================
+Program   		  : FOP_67
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to print number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print number pattern.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or  Columns  is not in a range of above constraints then, print -2.
+-Otherwise to print number pattern.
+
+Sample Input1:
+5 5
+Sample Output1:
+12345
+23455
+34555
+45555
+55555
+ 
+Sample Input2:
+-6 -8
+Sample Output2:
+-1
+
+Sample Input3:
+20 21
+Sample Output3:
+-2
+
+Input4:
+6 6
+Output4:
+123456
+234566
+345666
+456666
+566666
+666666
+
+Input5:
+6 5
+Output5:
+12345
+23455
+34555
+45555
+55555
+55555
+
+Input6:
+7 8
+Output6:
+12345678
+23456788
+34567888
+45678888
+56788888
+67888888
+78888888
+ 
+Input7:
+8 9
+Output7:
+123456789
+234567899
+345678999
+456789999
+567899999
+678999999
+789999999
+899999999
+
+Input8:
+5 10
+Output8:
+12345678910
+234567891010
+3456789101010
+45678910101010
+567891010101010
+
+Input9:
+6 10
+Output9:
+12345678910
+234567891010
+3456789101010
+45678910101010
+567891010101010
+6789101010101010
+
+Input10:
+7 7
+Output10:
+1234567
+2345677
+3456777
+4567777
+5677777
+6777777
+7777777
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 		//write the code here...
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+			for (int i = 1; i <= rows; i++) {
+					 for(int j=i;j<=cols;j++){
+						 System.out.print(j);
+					 }
+					 for(int k=i;k>1;k--){
+						 System.out.print(cols);
+					 }
+					 System.out.println();
+			}
+
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+=======================================================================================================================
+Program   		  : FOP_68
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to print number pattern.
+
+Input  Format  : First line contains input numbers i.e. rows and columns. 
+Output Format  : Second line to print number pattern.  
+
+Constraints:
+5<=ROWS<=15
+5<=COLUMNS<=15
+Specification: The method numberPattern() is determined by the following rules: 
+-If Rows or  Columns  is negative or zero then print -1.
+-If Rows or  Columns  is not in a range of above constraints then, print -2.
+-Otherwise to print number pattern.
+
+Sample Input1:
+5 5
+Sample Input2:
+12345
+23451
+34521
+45321
+54321
+
+Sample Input2:
+5 -5
+Sample Input2:
+-1
+
+Sample Input3:
+16 20
+Sample Output3:
+-2
+
+Input4:
+5 6
+Output4:
+123456
+234561
+345621
+456321
+564321
+
+Input5:
+6 7
+Output5:
+1234567
+2345671
+3456721
+4567321
+5674321
+6754321
+
+Input6:
+7 7
+Output6:
+1234567
+2345671
+3456721
+4567321
+5674321
+6754321
+7654321
+
+Input7:
+7 8
+Output7:
+12345678
+23456781
+34567821
+45678321
+56784321
+67854321
+78654321
+
+Input8:
+8 10
+Output8:
+12345678910
+23456789101
+34567891021
+45678910321
+56789104321
+67891054321
+78910654321
+89107654321
+
+Input9:
+6 10
+Output9:
+12345678910
+23456789101
+34567891021
+45678910321
+56789104321
+67891054321
+
+Input10:
+8 8
+Output10:
+12345678
+23456781
+34567821
+45678321
+56784321
+67854321
+78654321
+87654321
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		 	//write the code here..
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		numberPattern(rows, cols);
+	}
+
+	public static void numberPattern(int rows, int cols) {
+		if (rows <= 0 || cols <= 0) {
+			System.out.println(-1);
+		} else if (rows >= 5 && rows <= 15 && cols >= 5 && cols <= 15) {
+			for (int i = 1; i <= rows; i++) {
+					 for(int j=i;j<=cols;j++){
+						 System.out.print(j);
+					 }
+					 for(int k=i-1;k>=1;k--){
+						 System.out.print(k);
+					 }
+					 System.out.println();
+			}
+
+		} else {
+			System.out.println(-2);
+		}
+	}
+}
+===========================================================================================
+Program   		  : FOP_69
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic  to print number pattern.
+
+Input  Format  : First line contains input numbers i.e is N. 
+Output Format  : Second line to print number pattern.  
+
+Constraints:
+1<=N<=15
+
+Specification: The method numberPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is  not in a range of above constraints then, print -2.
+-Otherwise to print number pattern.
+ 
+Sample Input1:
+5
+Sample Output1:
+12345
+21234
+32123
+43212
+54321
+
+Sample Input2:
+-9
+Sample Output2:
+-1
+
+Sample Input3:
+16
+Sample Output3:
+-2
+
+Input4:
+9
+Output4:
+123456789
+212345678
+321234567
+432123456
+543212345
+654321234
+765432123
+876543212
+987654321
+
+Input5:
+6
+Output5:
+123456
+212345
+321234
+432123
+543212
+654321
+
+Input6:
+7
+Output6:
+1234567
+2123456
+3212345
+4321234
+5432123
+6543212
+7654321
+
+Input7:
+8
+Output7:
+12345678
+21234567
+32123456
+43212345
+54321234
+65432123
+76543212
+87654321
+
+Input8:
+10
+Output8:
+12345678910
+2123456789
+3212345678
+4321234567
+5432123456
+6543212345
+7654321234
+8765432123
+9876543212
+10987654321
+
+Input9:
+-11
+Output9:
+-1
+
+Input10:
+13
+Output10:
+12345678910111213
+2123456789101112
+321234567891011
+43212345678910
+5432123456789
+6543212345678
+7654321234567
+8765432123456
+9876543212345
+10987654321234
+111098765432123
+1211109876543212
+13121110987654321
+
+Templet:
+=======
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		numberPattern(N);
+		 
+	}
+
+	public static void numberPattern(int N) {
+		 //write the code here...
+	}
+}
+
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		numberPattern(N);
+		 
+	}
+
+	public static void numberPattern(int N) {
+		if (N <= 0) {
+			System.out.print(-1);
+		} else if (N >= 1 && N <=15) {
+			for (int i = 1; i <= N; i++) {
+				for (int j = i; j > 1; j--) {
+					System.out.print(j);
+				}
+				for (int k = 1; k <= (N - i + 1); k++) {
+					System.out.print(k);
+
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+==============================================================================================================
+Program   		  : FOP_70
+Language 		  : Java
+Level    		  : Medium
+Module   		  : Fundamental of Programming
+Topic    		  : Control Statements 
+Subtopic 		  : Loops
+Problem Statement : 
+For a given method write the logic to print the triangular number pattern.
+
+Input  Format  : First line contains input numbers i.e is N. 
+Output Format  : Second line to print the triangular number pattern.  
+
+Constraints:
+5<=N<=20
+
+Specification: The method numberPattern() is determined by the following rules: 
+-If N is negative or zero then print -1.
+-If N is  not in a range of above constraints then, print -2.
+-Otherwise print the triangular number pattern.
+
+Sample Input1:
+5
+Sample Output1:
+1
+22
+333
+4444
+55555
+
+Sample Input2:
+0
+Sample Output2:
+-1
+
+Sample Input3:
+21
+Sample Output3:
+-2
+
+Input4:
+7
+Output4:
+1
+22
+333
+4444
+55555
+666666
+7777777
+
+Input5:
+6
+Output5:
+1
+22
+333
+4444
+55555
+666666
+
+Input6:
+8
+Output6:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+
+Input7:
+9
+Output7:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+
+Input8:
+10
+Output8:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+10101010101010101010
+ 
+Input9:
+11
+Output9:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+10101010101010101010
+1111111111111111111111
+ 
+Input10:
+15
+Output10:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999
+10101010101010101010
+1111111111111111111111
+121212121212121212121212
+13131313131313131313131313
+1414141414141414141414141414
+151515151515151515151515151515
+
+Templet:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		numberPattern(N);
+		 
+	}
+
+	public static void numberPattern(int N) {
+		 	//write the code here..
+	}
+}
+ 
+Solution:
+========
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		numberPattern(N);
+		 
+	}
+
+	public static void numberPattern(int N) {
+		if (N <= 0) {
+			System.out.print(-1);
+		} else if (N >= 1 && N <=20) {
+			for (int i = 1; i <= N; i++) {
+				 for(int j=1;j<=i;j++){
+					 System.out.print(i);
+				 }
+				System.out.println();
+			}
+		} else {
+			System.out.print(-2);
+		}
+	}
+}
+===============================================================================================================
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
